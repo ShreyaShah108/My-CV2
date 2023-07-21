@@ -6,12 +6,21 @@ position: static;
 padding-top: 5%;
 padding-bottom: 5%;
 }
+.flex{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
 .rect {
     margin: auto;
     text-align: left;
-    height: 60%;
-    width: 60%;
+    /* height: 80%;
+    width: 80%; */
     position: static;
+    margin: 5%;
     padding-top:5%;
    /* padding-left:10%; */
    padding-bottom: 5%;
@@ -22,30 +31,26 @@ padding-bottom: 5%;
   }
 h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-family: 'Playfair Display', serif;
     color: rgb(93, 58, 93) ;
 }
 #name {
     padding-bottom: 3%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .formstyle{
-    position: relative;
-    padding-left: 10%;
-    /* padding-right: 20%; */
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    background-color: aqua;
+    margin: auto;   
     color: rgb(93, 58, 93);
 }
 #name input{
-    width: 40%;
-    padding: 0.5%;
+    height: 1rem;
+    width: 10rem;
+    padding: 0.1rem;
     border-radius: 5px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background-color: rgb(214, 195, 231);
 }
 .error{
@@ -57,36 +62,42 @@ h1 {
 #email {
     padding-bottom: 3%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 #phone {
     padding-bottom: 3%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 #email input{
-    width: 50%;
-    padding: 0.5%;
+    height: 1rem;
+    width: 15rem;
+    padding: 0.1rem;
     border-radius: 5px;
-    font-size: 1.25rem;
+    font-size: 0.6rem;
     background-color: rgb(214, 195, 231);
 }
 #phone input{
-    width: 35%;
-    padding: 0.5%;
+    height: 1rem;
+    width: 10rem;
+    padding: 0.1rem;
     border-radius: 5px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background-color: rgb(214, 195, 231);
 }
 .button{
-    margin-left: 47%;
-    border-radius: 0;
+    /* position: static;
+    text-align: center;
+    justify-content: center; */
+    /* margin-left: calc(50% - 50px); */
+    border-radius: 10px;
     width: 100px;
-    height: 50px;
+    height: 35px;
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     background-color: rgb(93, 58, 93);
+    cursor: pointer;
 }
 .button:hover{
     color: #9f86bb; 

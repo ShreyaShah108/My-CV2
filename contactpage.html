@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="contStyle.css">
             <!-- google font -->
             <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,17 +15,24 @@
 <body>
     <div class="rect">
    <form action="/formaction.php" name="MyForm" onsubmit="return validate()" method="post">
-    <h1>*Details</h1>
-    <div id="name" class="formstyle">
+    <h1>*Details</h1><div class="flex">
+    <!-- <div id="name" class="formstyle" class="container-md">
         <b>Name:</b> <div><input type="text" name="fname"><b><span class="error"></span></b></div>
-    </div>
-    <div id="email" class="formstyle">
-        <b>Email:</b> <div><input type="email" name="femail"><b><span class="error"></span></b></div>
-    </div>
-    <div id="phone" class="formstyle">
-        <b>Phone No.:</b> <div><input type="number" name="fphone"><b><span class="error"></span></b></div>
-    </div>
+    </div> -->
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="fname" placeholder="name lastname">
+      </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="femail" placeholder="name@example.com">
+      </div>
+    <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="number" class="form-control" id="fphone" placeholder="+91 0123456789">
+      </div>
     <input class="button" type="submit" value="Submit">
+    </div>
    </form> 
    </div>
 </body>
